@@ -21,6 +21,7 @@ El sistema está **modularizado** para mantener el código ordenado y facilitar 
 
 El archivo `api.py` contiene la función principal:
 def cargar_datos_api(url):
+
 **Descripción:**
 
 Realiza una solicitud a la URL de la API para obtener los datos en formato JSON.
@@ -54,11 +55,18 @@ https://restcountries.com/v3.1/all
 **1-Hay que tener Python 3.10 o superior instalado.**
 
 **2-Abrí la terminal en la carpeta del proyecto:**
+
 cd C:\INTEGRADORPROGRAMCION1
+
+
 **3.Ejecutá el archivo principal**
 python main.py
+
+
 **4. El sistema se conectará a la API y descargará los datos de los países.
 Luego se mostrará un menú interactivo con distintas opciones, por ejemplo:**
+
+
 ==== MENÚ PRINCIPAL ====
 1. Listar todos los países
 2. Buscar país por nombre
@@ -70,6 +78,7 @@ Luego se mostrará un menú interactivo con distintas opciones, por ejemplo:**
 
 
 **AUTORES**
+
 MATIAS VARGAS Y FACUNDO DESEFF
 
 -Proyecto integrador de paises para la materia Programación 1
