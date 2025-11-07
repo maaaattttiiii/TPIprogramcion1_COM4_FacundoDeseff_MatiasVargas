@@ -5,6 +5,9 @@ from menu import mostrar_menu
 from validaciones import confirmar_accion
 from operaciones import buscar_pais_por_nombre, filtrar_paises, ordenar_paises, mostrar_estadisticas
 
+
+#EL MAIN, LA PARTE PRINCIPAL DEL PROGRAMA
+
 def main():
     archivo_csv = "paises.csv"
     url_api = "https://restcountries.com/v3.1/all?fields=name,population,area,continents"

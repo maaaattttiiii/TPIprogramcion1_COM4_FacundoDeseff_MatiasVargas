@@ -1,3 +1,6 @@
+
+#muestra los menu 
+
 def mostrar_menu():
     print("\n--- Menú Principal: Gestión de Países ---")
     print("1. Buscar país por nombre")

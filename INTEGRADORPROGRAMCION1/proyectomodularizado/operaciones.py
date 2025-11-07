@@ -8,7 +8,7 @@ def buscar_pais_por_nombre(paises, nombre):
 def filtrar_paises(paises):
     while True:
         opcion = mostrar_menu_filtrado()
-        resultados = []
+        resultados = [] #se crea lista vacia para que no salte errores
         if opcion == "1":
             cont = input("Ingrese continente: ").strip()
             resultados = [p for p in paises if cont.lower() == p["continente"].lower()]
@@ -22,13 +22,14 @@ def filtrar_paises(paises):
             resultados = [p for p in paises if min_s <= p["superficie"] <= max_s]
         elif opcion == "4":
             break
-        mostrar_paises(resultados)
+        mostrar_paises(resultados)#para imprimir resultados
 
 def ordenar_paises(paises):
+    #en las opciones usamos lambda para los criterios del sorted
     while True:
         opc = mostrar_menu_ordenar()
         if opc == "1":
-            mostrar_paises(sorted(paises, key=lambda x: x["nombre"].lower()))
+            mostrar_paises(sorted(paises, key=lambda x: x["nombre"].lower()))#sorted ordena segun criterios
         elif opc == "2":
             mostrar_paises(sorted(paises, key=lambda x: x["poblacion"]))
         elif opc == "3":
@@ -68,4 +69,4 @@ def mostrar_estadisticas(paises):
         print(f"\n{cont}:")
         print(f"  Países: {datos['cantidad']}")
         print(f"  Promedio población: {pobl_prom:,.0f} hab.")
-        print(f"  Promedio superficie: {sup_prom:,.0f} km²")
+        print(f"  Promedio superficie: {sup_prom:,.0f} km2")
